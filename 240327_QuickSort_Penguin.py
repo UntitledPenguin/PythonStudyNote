@@ -1,5 +1,12 @@
+
+
+
+# Python program for implementation of Quicksort Sort
+# This implementation utilizes pivot as the first element in the nums list
+# Sorting n interger in given scale
+# Date:2024 March 27
+
 import random
-import math
     
 def QuickSort(lst):
     if len(lst)<2: return lst
