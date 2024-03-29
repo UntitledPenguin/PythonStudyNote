@@ -1,9 +1,17 @@
 
-#### 算法核心
-1. 将一个给定的值（一般取第一个或最后一个元素）作为基准，把比它大的元素放到一边，把比它大的元素放到另一边，
-2. 然后再次对两边分别作相同的操作。
+DATE: 2024_03_29
 
-#### 代码：
+#001-QuickSort 
+
+#### 算法核心 
+
+1. 将一个给定的值（一般取第一个或最后一个元素）作为基准，把比它大的元素放到一边，把比它大的元素放到另一边，
+- Take a given value (usually the first or last element) as a pivot, put elements larger than it on one side, and put elements smaller than it on the other side.
+
+2. 然后再次对两边分别作相同的操作。
+- Then, repeat the same operation separately on both sides.
+
+#### 代码
 ```
 def partition(arr,l,h):
 	
@@ -89,4 +97,6 @@ $$C_n=2(N+1)H_n-2N$$
 #### 展望：
 当然，我们也可以编程验证此事：只需要取大量的n再进行大量的重复实验，实验结果点阵图应当和上述曲线接近。
 
-
+#### References
+https://www.coursera.org/learn/analysis-of-algorithms/
+https://aofa.cs.princeton.edu/home/
