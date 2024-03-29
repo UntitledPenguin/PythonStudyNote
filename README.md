@@ -1,5 +1,5 @@
 
-# Python Study Notes from Untitled Goose
+# Python Study Notes from UntitledPenguin
 
 ## Description
 
@@ -10,11 +10,11 @@ This repository contains my notes and code for my study of the Python programmin
 
 - 01 QuickSort 
     Idea
-    Scipt
+    Script
     Time complexity analysis
 
     
-- ....COMING SOOM
+- ....COMING SOON
 
 ## Usage
 
