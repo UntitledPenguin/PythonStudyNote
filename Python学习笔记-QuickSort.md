@@ -1,7 +1,7 @@
 
 DATE: 2024_03_29
 
-#001-QuickSort 
+# 001-QuickSort 快速排序
 
 #### 算法核心 
 
