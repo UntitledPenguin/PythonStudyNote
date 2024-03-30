@@ -89,7 +89,7 @@ $$NC_n-(N-1)C_{n-1}=2N+2C_{n-1}$$
 
 $$C_n=2(N+1)H_n-2N$$
 由于*调和数：H_n～ln(n)+γ 
-*渐近分析 可知 Cn接近于 2N*ln(N)的复杂度（考虑N趋于无穷大时：）
+渐近分析 可知 Cn接近于 2N*ln(N)的复杂度（考虑N趋于无穷大时：）
 	$$ \lim_{n\to\infty}\frac{Cn}{2NlnN}=\lim_{n\to\infty}\frac{2NlnN+2LnN-2N}{2NlnN}=1 $$
 
 由此 我们就得到了快速排序的平均时间复杂度。
