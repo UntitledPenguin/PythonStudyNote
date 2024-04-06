@@ -3,14 +3,11 @@ import random
 import time
 
 # Get the current time in seconds since the epoch
-
 current_time = int(time.time())
 # Set the random seed based on the current time
-
 random.seed(current_time)
-# Generating Full Deck
-# Use zip to combine ranks and suits, and convert the result to a list of tuples
 
+# Initialization basic information of the card deck:
 ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
 symbols=['\u2665','\u2666','\u2663','\u2660']
@@ -24,7 +21,6 @@ for i in range(0,4):
      card=(suits[i],ranks[j],symbols[i],values[j])
      deck.append(card)
 
-score=0
 
 def PrintCARD(crds):
     # Print the Card in a Professional Way!
@@ -101,6 +97,8 @@ def Checktype(lst):
        for sk in range(sl+1,5):
             if lst[sl][3]<lst[sk][3]:
                 lst[sl],lst[sk]=lst[sk],lst[sl]
+
+#Preparation before deciding the type of the card    
     PrintCARD(lst)
     dif=[]
     Flush=True
@@ -110,13 +108,13 @@ def Checktype(lst):
     prodt=1
     sum=0
 
-# whether it is a flush and calculate the sum of the cards rank:
+#Whether it is a flush and calculate the sum of the cards rank:
     for i in range(1,5):
         sum=sum+lst[i][3]
         if lst[i][2]!=cur_suit: 
             Flush=False
 
-# whether it is a straight:
+#Whether it is a straight:
     for i in range(0,4):
         dif.append(lst[i][3]-lst[i+1][3])
         prodt=dif[i]*prodt
@@ -172,7 +170,9 @@ def Checktype(lst):
          print("You've got High Cards.")
     return chip,multi
 
-# GameSetting
+# Welcome and GameSetting
+
+score=0
 
 print("-" * 25)
 print("Welcome to our Penguin Poker Game!")
