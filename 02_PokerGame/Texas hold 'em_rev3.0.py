@@ -226,7 +226,7 @@ for i in range(0,n):
             
             index1=int(input("Please input index of the 1st card you want to replace:"))
             index2=int(input("Please input index of the 2nd card you want to replace:"))
-            while index2==index: index2=int(input("please reselect the 2nd card"))
+            while index2==index1: index2=int(input("please reselect the 2nd card"))
             
             hcard.pop(index1-1)
             p1=random.randint(0, len(deck)-1)
@@ -255,7 +255,7 @@ for i in range(0,n):
     chips,mults=Checktype(pickcard)
     Bonus=x*(mults-1)
     score=score-x+chips*mults+Bonus
-    print("You EARN:"+str(chips)+" (Chips) * "+str(mults)+"(Multi) + "+str(Bonus)+" (Interest) = "+str(chips*mults)+" in this round")
+    print("You EARN:"+str(chips)+" (Chips) * "+str(mults)+"(Multi) + "+str(Bonus)+" (Interest) = "+str(chips*mults+Bonus)+" in this round")
     print("Your Current Score is:"+str(score))
     print("You have "+str(len(deck))+" cards left!")
 
